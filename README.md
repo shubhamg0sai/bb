@@ -270,12 +270,7 @@ Output:
 
 
 
-Name: Shubham Gosai
-Course: Bsc IT 4B
-University rollno: 2023102
-
-
-Problem statement:Write a c program to compute absolute, relative and percentage error.
+# Write a c program to compute absolute, relative and percentage 
 
 Formula:
 Ea=|true value – approx value|
@@ -283,29 +278,26 @@ Er=Ea/true value
 Ep=Er*100
 
 Source code:
-#include <stdio.h>
+#include<stdio.h>
+#include<math.h>
 int main()
 {
-  double x,y;
-  printf("enter accurate value:");
-  scanf("%lf",&x);
-  printf("enter approx value:");
-  scanf("%lf",&y);
-  double ea,er,ep;
-  if(x>=y){
-    ea=x-y;
-  }else{
-    ea=y-x;
-  }
-  er=ea/x;
-  ep=er*100;
-  printf("absolute error= %lf\nrelative error= %lf\npercentage error= %lf",ea,er,ep);
-  return 0;
+    float abserror, relerror, percerror, trueval, approxval;
+    printf("enter true value\n");
+    scanf("%f",&trueval);
+    printf("enter approx value\n");
+    scanf("%f",&approxval);
+    abserror=fabs(trueval-approxval);
+    relerror=abserror/trueval;
+    percerror=relerror*100;
+    printf("absolute error = %f\n",abserror);
+    printf("relative error = %f\n",relerror);
+    printf("percentage error = %f\n",percerror);
+
+    return 0;
 }
 
 
-
-Output:
 
 
 
