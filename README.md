@@ -29,39 +29,25 @@ long int mnum(int n) {
 
 # compute power of a number
 
-Formula:
-a^b=a*a*a…(b times)
-
-Source code:
 #include <stdio.h>
-int pow(int b,int e){
-  if(e==0){
-    return 1;
-  }else if(e==1){
-    return b;
-  }else{
-    return b*pow(b,e-1);
-  }
-}
-int main(){
-  int b,e;
-  printf("enter base and exponent ");
-  scanf("%d %d",&b,&e);
-  printf("result= %d",pow(b,e));
-  return 0;
+int power(int n1, int n2);
+int main() {
+    int base, a, result;
+    printf("Enter base number: ");
+    scanf("%d", &base);
+    printf("Enter power number(positive integer): ");
+    scanf("%d", &a);
+    result = power(base, a);
+    printf("%d^%d = %d", base, a, result);
+    return 0;
 }
 
-
-
-
-
-Output:
-
-
-
-
-
-
+int power(int base, int a) {
+    if (a != 0)
+        return (base * power(base, a - 1));
+    else
+        return 1;
+}
 
 
 
@@ -72,13 +58,13 @@ Output:
 
 
 
-Name: Shubham Gosai
-Course: Bsc IT 4B
-University rollno: 2023102
 
-Problem statement:Write a c program to calculate roots of quadratic equation of the form ax^2+bx+c=0 by calculating discriminant(d).
 
-Formula:
+
+
+# roots of quadratic equation of the form ax^2+bx+c=0
+
+
 d=b^2-4ac
 roots=(-b +- sqrt(d))/2a
 
@@ -131,12 +117,6 @@ int main(){
 
 
 
-
-
-
-
-
-Output:
 
 
 
