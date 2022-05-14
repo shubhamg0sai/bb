@@ -134,7 +134,7 @@ Name: Shubham Gosai
 Course: Bsc IT 4B
 University rollno: 2023102
 
-Problem statement:Write a c program to create a mathematical operation with following operation
+# Write a c program to create a mathematical operation with following operation
 Addition, subtraction, multiplication and division
 Square root
 Power
@@ -224,7 +224,7 @@ Name: Shubham Gosai
 Course: Bsc IT 4B
 University rollno: 2023102
 
-Problem statement:Write a c program to calculate e^x series up to given number of terms. Then print sum of them.
+# Write a c program to calculate e^x series up to given number of terms. Then print sum of them.
 
 Formula:
 e^x = 1 + (x^1)/1! + (x^2)/2! + (x^3)/3! + …..(x^n)/n!
@@ -314,7 +314,7 @@ Name: Shubham Gosai
 Course: Bsc IT 4B
 University rollno: 2023102
 
-Problem statement: Find the root of the equation x^3-x-1=0 using bisection method.
+# Find the root of the equation x^3-x-1=0 using bisection method.
 
 Formula:
 x=(a+b)/2
@@ -475,7 +475,7 @@ Course: Bsc IT 4B
 University rollno: 2023102
 
 
-Problem statement: Find the root of the equation x^3-17=0 using regular-falsi method.
+# Find the root of the equation x^3-17=0 using regular-falsi method.
 
 Formula:
 x2=x1-(f(x1)*(x1-x0))/(f(x1)-f(x0))
@@ -556,7 +556,7 @@ Name: Shubham Gosai
 Course: Bsc IT 4B
 University rollno: 2023102
 
-Problem statement: Find root of the equation x=17^(1/3) using Newton Raphson method.
+# Find root of the equation x=17^(1/3) using Newton Raphson method.
 
 Formula:
 xn=xn-1-f(xn-1)/f’(xn-1).
@@ -687,7 +687,7 @@ Name: Shubham Gosai
 Course: Bsc IT 4B
 University rollno: 2023102
 
-Problem statement: Find root of the equation x+sin(x)+1=0 using iteration method.
+# Find root of the equation x+sin(x)+1=0 using iteration method.
 
 Formula:
 xn=f’(xn-1)
@@ -776,7 +776,7 @@ Name: Shubham Gosai
 Course: Bsc IT 4B
 University rollno: 2023102
 
-Problem statement: Find root of the equation x^3=17 using secant method.
+# Find root of the equation x^3=17 using secant method.
 
 Formula:
 Xn+1=xn-(f(xn)*(xn-xn-1))/(f(xn)-f(xn-1));
