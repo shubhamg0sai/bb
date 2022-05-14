@@ -1,5 +1,49 @@
 # bb
 
+
+#include<stdio.h>
+#include<math.h>
+float fuction(float x){
+    return(x*x*x-x-1);                                                  
+}
+int main(){
+    int i=0;
+    float a=0,b=1,x;
+    if(fuction(a)==0){
+        printf("root of the equation is %.4f",a);
+        return 0;
+    }else if(fuction(b)==0){
+        printf("root of the equation is %.4f",b);
+        return 0;
+    }else{
+        while((fuction(a)*fuction(b))>=0){
+            a++;
+            b++;
+        }
+        printf("range of the equation is from %.4f to %.4f\n",a,b);
+        printf("\nitr\ta\tb\tx\tf(x)\n\n");
+        while(1){
+            i++;
+            x=(a+b)/2.0;        
+            if(fuction(x)==0.0 || (b-a)<=0.0001){
+                break;        
+            }
+            printf("%d\t%.4f\t%.4f\t%.4f\t%.4f\n",i,a,b,x,fuction(x));
+            if(fuction(x)>0){
+                b=x;        
+            }else if(fuction(x)<0){
+                a=x;        
+            }
+        }
+        printf("root of the equation is %.4f",x);
+        return 0;
+    }
+}
+
+
+
+
+
 # factorial.
 
 #include<stdio.h>
