@@ -1,7 +1,7 @@
 # bb
 
 # Write a c program to calculate factorial of a number using recursion.
-*
+
 #include<stdio.h>
 long int mnum(int n);
 int main() {
@@ -18,7 +18,6 @@ long int mnum(int n) {
     else
         return 1;
 }
-*
 
 
 
