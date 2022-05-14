@@ -1,6 +1,6 @@
 # bb
 
-# Write a c program to calculate factorial of a number using recursion.
+# factorial.
 
 #include<stdio.h>
 long int mnum(int n);
@@ -31,7 +31,7 @@ Name: Shubham Gosai
 Course: Bsc IT 4B
 University rollno: 2023102
 
-Problem statement:Write a c program to compute power of a given number using recursion.
+# compute power of a number
 
 Formula:
 a^b=a*a*a…(b times)
