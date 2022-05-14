@@ -27,10 +27,6 @@ long int mnum(int n) {
 
 
 
-Name: Shubham Gosai
-Course: Bsc IT 4B
-University rollno: 2023102
-
 # compute power of a number
 
 Formula:
