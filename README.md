@@ -1,45 +1,24 @@
 # bb
 
-Name: Shubham Gosai
-Course: Bsc IT 4B
-University rollno: 2023102
-
-Problem statement:Write a c program to calculate factorial of a number using recursion.
-
-Formula:
-Fact of n=1*2*3*4*……n
-
-Source code:
-#include <stdio.h>
-int fact(int n){
-  if(n==1 || n==0){
-    return n;
-  }else{
-    return n*fact(n-1);		
-  } 
-}
-int main()
-{
-  printf("enter a number: ");
-  int n;
-  scanf("%d",&n);
-  printf("\nfactorial of %d is %d",n,fact(n));
-  return 0;
+# Write a c program to calculate factorial of a number using recursion.
+/*
+#include<stdio.h>
+long int mnum(int n);
+int main() {
+    int n;
+    printf("Enter a positive integer: ");
+    scanf("%d",&n);
+    printf("Factorial of %d = %ld", n, mnum(n));
+    return 0;
 }
 
-
-
-
-
-
-
-
-Output:
-
-
-
-
-
+long int mnum(int n) {
+    if (n>=1)
+        return n*mnum(n-1);
+    else
+        return 1;
+}
+*/
 
 
 
