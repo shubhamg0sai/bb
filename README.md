@@ -1,39 +1,38 @@
-PROBLEM STATEMENT - Write a java program to create a class electricity and calculate the bill based on the following conditions
-If unit < 100 bill=1.20* unit
-Unit< 200 bill=(100*1.20)+(unit -100 *2)
-Unit < 300 bill=(100*1.20)+(unit -100 *2)+(unit-200+3)
-
-OBJECTIVE -To understand the concept of java ( object oriented language) .
-
-EXPLAINATION – In java classes are categories and objects are items within each category . */
-
-CODE-
-import java.util.*;
-class ElectricityBill
+import java.util.Scanner;
+public class FibonacciCLA 
 {
-    public static void main(String args[])
+    public static void main(String[] args) 
     {
-    Scanner sc = new Scanner(System.in);
-int unit = 0;
-        double bill=0.0;
-System.out.println("Enter Unit: ");
-        unit = sc.nextInt();
-        if (unit<100)
+        int n, a = 0, b = 0, c = 1;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter value of n:");
+        n = s.nextInt();
+        System.out.print("Fibonacci Series:");
+        for(int i = 1; i <= n; i++)
         {
-            bill=1.20*unit;
-        }
-        else if (unit<200)
-        {
-            bill =(100*1.20)+(unit-100*2);
-        }
-        else if (unit<300)
-        {
-            bill = (100*1.20)+(unit-100*2)+(unit - 200+3);
-        }
-        else
-        {
-System.out.println("invalid unit");
-        }
-System.out.println("Electricity bill is " +bill);
+            a = b;
+            b = c;
+            c = a + b;
+            System.out.print(a);
         }
     }
+}
+
+/*
+
+class FibonacciCLA
+{
+public static void main(String args[])
+{
+int a=0,b=1,c=0;
+int n=Integer.parseInt(args[0]);
+for(int i=1;i<n-1;i++)
+{
+System.out.print(a);
+c=a+b;
+a=b;
+b=c;
+}
+}
+}
+*/
